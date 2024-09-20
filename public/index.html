@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf API UI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bookshelf API</h1>
+    
+    <!-- Add Book Form -->
+    <section id="add-book">
+      <h2>Tambah Buku</h2>
+      <form id="addBookForm">
+        <input type="text" id="name" placeholder="Nama Buku" required>
+        <input type="text" id="author" placeholder="Penulis" required>
+        <input type="text" id="publisher" placeholder="Penerbit" required>
+        <input type="number" id="year" placeholder="Tahun" required>
+        <input type="number" id="pageCount" placeholder="Jumlah Halaman" required>
+        <input type="number" id="readPage" placeholder="Halaman Dibaca" required>
+        <input type="checkbox" id="reading"> Masih Dibaca
+        <button type="submit">Tambah Buku</button>
+      </form>
+      <div id="addBookResult"></div>
+    </section>
+
+    <!-- Book List -->
+    <section id="book-list">
+      <h2>Daftar Buku</h2>
+      <button id="getBooks">Lihat Semua Buku</button>
+      <ul id="books"></ul>
+    </section>
+
+    <!-- Update Book -->
+    <section id="update-book">
+      <h2>Perbarui Buku</h2>
+      <form id="updateBookForm">
+        <input type="text" id="bookId" placeholder="ID Buku" required>
+        <input type="text" id="updatedName" placeholder="Nama Buku Baru" required>
+        <input type="text" id="updatedAuthor" placeholder="Penulis Baru" required>
+        <button type="submit">Perbarui Buku</button>
+      </form>
+      <div id="updateBookResult"></div>
+    </section>
+
+    <!-- Delete Book -->
+    <section id="delete-book">
+      <h2>Hapus Buku</h2>
+      <form id="deleteBookForm">
+        <input type="text" id="deleteBookId" placeholder="ID Buku" required>
+        <button type="submit">Hapus Buku</button>
+      </form>
+      <div id="deleteBookResult"></div>
+    </section>
+  </div>
+
+  <!-- readdocs -->
+  <section>
+    <div class="docs">
+      <p>Documentation</p>
+    </div>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
+</html>
